@@ -1,0 +1,12 @@
+<launch>
+<!-- Launch file for ouster OS1-128 LiDAR -->
+
+    <param name="frame_skip" type="int" value="20" />
+    <param name="selnum_perring" type="int" value="20000" />
+    <param name="out_path" type="string" value="config/lidar_calibration_new.json" />
+    <param name="blind" type="double" value="1.0" />
+    <param name="lid_topic" type="string" value="/os_cloud_node/points"/>
+    <param name="metadata_path" type="string" value="config/metadata_RILIO.json" />
+    <node pkg="rilio" type="CorrectProjection" name="CorrectProjection" output="screen" /> 
+
+</launch>
