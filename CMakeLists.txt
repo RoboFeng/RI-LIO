@@ -57,7 +57,6 @@ find_package(catkin REQUIRED COMPONENTS
 find_package(OpenCV REQUIRED)
 find_package(Eigen3 REQUIRED)
 find_package(PCL 1.8 REQUIRED)
-find_package (GeographicLib REQUIRED)
 
 
 message(Eigen: ${EIGEN3_INCLUDE_DIR})
@@ -67,7 +66,6 @@ include_directories(
   ${EIGEN3_INCLUDE_DIR}
   ${PCL_INCLUDE_DIRS}
   ${OpenCV_INCLUDE_DIRS}
-  ${GeographicLib_INCLUDE_DIRS}
   include)
 
 add_message_files(
