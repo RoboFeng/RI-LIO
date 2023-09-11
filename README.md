@@ -21,7 +21,7 @@ Clone the repository and catkin_make:
 ```shell
 mkdir -p ~/$A_ROS_DIR$/src
 cd ~/$A_ROS_DIR$/src
-git clone https://github.com/YanfengZhang-98/RI-LIO.git --recursive
+git clone https://github.com/RoboFeng/RI-LIO.git --recursive
 cd ..
 catkin_make
 source devel/setup.bash
